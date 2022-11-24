@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 900px;
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+nav .logo{
+    width: 25%;
+    text-align: center;
+}
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+nav .menu a{
+    width: 20%;
+    text-decoration: none;
+    color: orange;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+nav .menu a:hover{
+    color: white;
+}
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+section{
+
+}
+section h3{
+    font-size: 35px;
+    font-weight: 200px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 3px rgb(92, 85, 83);
+
+}
+section h1{
+    margin: 20px 0 20px 0;
+    font-size: 45px;
+    font-weight: 700px;
+    /* text-shadow: 2px 1px 3px gainsboro; */
+    text-transform: uppercase;
+}
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 110px;
+    /* text-shadow: 1px 1px 1px gray; */
+}
+section a{
+    margin-top: 10%;
+    padding: 15px 30px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: all.5s ease;
+    
+
+}
+section .butnone{
+    
+    color:black;
+    background-color: orange;
+}
+.butnone:hover{
+    color: orange;
+    background-color: black;
+}
+.butntwo:hover{
+    color:black;
+    background-color: orange;
+}
+section .butntwo{
+    color: orange;
+    background-color: black;
+}
+.change_cont:after{
+    content:"";
+    animation: changetext 10s infinite linear;
+    color: orange;
+
+}
+@keyframes changetext{
+    0%{content: 'DARJEELING';}
+    20%{content: 'AGRA';}
+    30%{content: 'JAIPUR';}
+    40%{content: 'NAGPUR';}
+    50%{content: 'KERALA';}
+    60%{content: 'DELHI';}
+    70%{content: 'PUNE';}
+    80%{content: 'MUMBAI';}
+    90%{content: 'VARANASI';}
+    100%{content: 'CHENNAI';}
+
+}
+/* section .map{
+    margin-top: 20%;
+} */
